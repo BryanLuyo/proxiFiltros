@@ -22,3 +22,9 @@ The API exposes a single endpoint:
 - `POST /Precalificacion/evaluar` – accepts a JSON body matching `PrecalificacionRequest` and returns the raw SOAP response as `soapResponse`.
 
 This service forwards the provided data to the SOAP endpoint configured in `Program.cs`.
+
+Create a `.env` file in the project root to configure the SOAP URL and other settings:
+
+```env
+WSExperian_Service=http://172.21.30.10:9000/ws_experian/service.asmx
+```
